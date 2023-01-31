@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.time.Year;
 import java.time.chrono.ChronoLocalDate;
 import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
@@ -11,9 +12,10 @@ public class Tester {
     public static void main(String[] args) {
 
         LocalDate a=LocalDate.now();
+        Year thisYear = Year.of(2023);
         System.out.println(a.lengthOfMonth()-a.getDayOfYear());
 
-        System.out.println(a.lengthOfYear()-a.getDayOfYear());
+        System.out.println(thisYear.length()-a.getDayOfYear());
 
 
 
